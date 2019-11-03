@@ -26,22 +26,20 @@ point4x4.addEventListener("click", function() {
     
     let can4x4 = requesCan4x4.response;
 
-    let canvas = document.querySelector("canvas"); // Select our canvas element
-    let contextCanvas = canvas.getContext("2d"); // Save the context we're going to use
+    let canvas = document.querySelector("canvas"); 
+    let contextCanvas = canvas.getContext("2d");
 
-    let width = can4x4[0].length; // Get the width of the array
-    let height = can4x4.length; // Get the height of the array
-    let scale = 128; // Scales the whole image by this amount, set to 1 for default size
+    let width = can4x4[0].length; 
+    let height = can4x4.length; 
+    let scale = 128; 
 
-    // Make sure the canvas is no larger than the size we need
     canvas.width = width * scale; 
     canvas.height = height * scale; 
 
-    // Loop through each color and draw that section
     for(let row = 0; row < height; row++) {
-      for(let col = 0; col < width; col++) { // Since there are nested arrays we need two for loops
-        contextCanvas.fillStyle = '#' + can4x4[row][col]; // Set the color to the one specified
-        contextCanvas.fillRect(col * scale, row * scale, scale, scale); // Actually draw the rectangle
+      for(let col = 0; col < width; col++) {
+        contextCanvas.fillStyle = '#' + can4x4[row][col]; 
+        contextCanvas.fillRect(col * scale, row * scale, scale, scale);
       }
     }
   }
@@ -65,23 +63,21 @@ point32x32.addEventListener("click", function() {
       }  
     }
     
-    let canvas = document.querySelector("canvas"); // Select our canvas element
-    let contextCanvas = canvas.getContext("2d"); // Save the context we're going to use
+    let canvas = document.querySelector("canvas");
+    let contextCanvas = canvas.getContext("2d");
+
+    let width = can32x32[0].length; 
+    let height = can32x32.length;
+    let scale = 16;
     
-    let width = can32x32[0].length; // Get the width of the array
-    let height = can32x32.length; // Get the height of the array
-    let scale = 16; // Scales the whole image by this amount, set to 1 for default size
-    
-    // Make sure the canvas is no larger than the size we need
     canvas.width = width * scale; 
     canvas.height = height * scale; 
     
-    // Loop through each color and draw that section
     for(let row = 0; row < height; row++) {
-      for(let col = 0; col < width; col++) { // Since there are nested arrays we need two for loops
-        contextCanvas.fillStyle = 'RGB(' + can32x32[row][col] +')'; // Set the color to the one specified
+      for(let col = 0; col < width; col++) { 
+        contextCanvas.fillStyle = 'RGB(' + can32x32[row][col] +')'; 
         console.log('RGB ( ' + can32x32[row][col] +' )');
-        contextCanvas.fillRect(col * scale, row * scale, scale, scale); // Actually draw the rectangle
+        contextCanvas.fillRect(col * scale, row * scale, scale, scale); 
       }
     }
   }
