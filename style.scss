@@ -122,7 +122,6 @@
 .switcher {
   max-width: 400px;
   margin: 50px;
-  padding: 30px;
   border: 1px solid black;
   box-shadow: 0 0 5px;
 }
@@ -143,10 +142,11 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  padding-left : 40px;
+  padding-right: 40px;
   
     &:hover {
       cursor: pointer;
       background: rgb(177, 174, 174);   
     }   
 }
-

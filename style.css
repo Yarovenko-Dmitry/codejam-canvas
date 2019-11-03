@@ -147,7 +147,6 @@
 .switcher {
   max-width: 400px;
   margin: 50px;
-  padding: 30px;
   border: 1px solid black;
   -webkit-box-shadow: 0 0 5px;
           box-shadow: 0 0 5px;
@@ -174,6 +173,8 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .img-switch:hover {
