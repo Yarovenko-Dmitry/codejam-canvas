@@ -79,7 +79,6 @@
 }
 
 .button-list {
-  max-width: px;
   margin: 50px;
   padding: 30px;
   border: 1px solid black;
@@ -145,7 +144,7 @@
           justify-content: flex-start;
 }
 
-.switch {
+.switcher {
   max-width: 400px;
   margin: 50px;
   padding: 30px;
@@ -156,5 +155,29 @@
 
 .img-canvas {
   display: none;
+}
+
+.switch {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  margin-right: 20px;
+}
+
+.img-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.img-switch:hover {
+  cursor: pointer;
+  background: #b1aeae;
 }
 /*# sourceMappingURL=style.css.map */
