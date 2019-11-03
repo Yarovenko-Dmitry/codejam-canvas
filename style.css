@@ -12,6 +12,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-shadow: 0 0 5px;
+          box-shadow: 0 0 5px;
 }
 
 .nav {
@@ -81,12 +83,15 @@
   margin: 50px;
   padding: 30px;
   border: 1px solid black;
+  -webkit-box-shadow: 0 0 5px;
+          box-shadow: 0 0 5px;
 }
 
 .canvas-wrapper {
   width: 512px;
   height: 512px;
-  border: 1px solid red;
+  -webkit-box-shadow: 0 0 5px;
+          box-shadow: 0 0 5px;
 }
 
 .main {
@@ -145,5 +150,11 @@
   margin: 50px;
   padding: 30px;
   border: 1px solid black;
+  -webkit-box-shadow: 0 0 5px;
+          box-shadow: 0 0 5px;
+}
+
+.img-canvas {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
