@@ -14,30 +14,21 @@
   width: 40px;
   height: 40px;
   background: url(./assets/svg/nav.svg) no-repeat center center;
-    
-    &:hover {
-      cursor: pointer;    
-    }    
+  cursor: pointer;
 }
 
 .menu {
   width: 12px;
   height: 24px;
   background: url(./assets/svg/menu-icon.svg) no-repeat center center;
-    
-    &:hover {
-      cursor: pointer;    
-    }    
+  cursor: pointer;   
 }
 
 .icon {
   width: 24px;
   height: 24px;
   margin-right: 20px;
-    
-    &:hover {
-      cursor: pointer;    
-    }    
+  cursor: pointer; 
 }
 
 .top-first {
@@ -91,10 +82,7 @@
   border: 1px solid black;
   border-radius: 50%;
   margin-right: 20px;
-  
-    &:hover {
-      cursor: pointer;    
-    }   
+  cursor: pointer;
 }
 
 .bottom-first {
@@ -126,9 +114,9 @@
   box-shadow: 0 0 5px;
 }
 
-.img-canvas {
-  display:none;
-}
+// .img-canvas {
+//   display:none;
+// }
 
 .switch {
   width: 20px;
@@ -142,11 +130,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left : 40px;
-  padding-right: 40px;
-  
+  padding: 0 40px;
+  cursor: pointer;
+
     &:hover {
-      cursor: pointer;
       background: rgb(177, 174, 174);   
     }   
 }
