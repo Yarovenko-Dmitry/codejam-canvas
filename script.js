@@ -55,5 +55,3 @@ function drawSomeImgCanvas(routeData, scaleImg, colorModel) {
     }
   }
 }
-
-
