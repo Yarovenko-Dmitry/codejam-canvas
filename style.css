@@ -19,14 +19,14 @@
 .nav {
   width: 40px;
   height: 40px;
-  background: url(./assets/svg/nav.svg) no-repeat center center;
+  background: url("./assets/svg/nav.svg") no-repeat center center;
   cursor: pointer;
 }
 
 .menu {
   width: 12px;
   height: 24px;
-  background: url(./assets/svg/menu-icon.svg) no-repeat center center;
+  background: url("./assets/svg/menu-icon.svg") no-repeat center center;
   cursor: pointer;
 }
 
@@ -38,19 +38,19 @@
 }
 
 .top-first {
-  background: url(./assets/svg/top-first-icon-share.svg) no-repeat center center;
+  background: url("./assets/svg/top-first-icon-share.svg") no-repeat center center;
 }
 
 .top-second {
-  background: url(./assets/svg/top-second-icon-upload.svg) no-repeat center center;
+  background: url("./assets/svg/top-second-icon-upload.svg") no-repeat center center;
 }
 
 .top-third {
-  background: url(./assets/svg/top-third-icon-copy.svg) no-repeat center center;
+  background: url("./assets/svg/top-third-icon-copy.svg") no-repeat center center;
 }
 
 .top-fourth {
-  background: url(./assets/svg/top-fourth-list-item.svg) no-repeat center center;
+  background: url("./assets/svg/top-fourth-list-item.svg") no-repeat center center;
 }
 
 .button-top {
