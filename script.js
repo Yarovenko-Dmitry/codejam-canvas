@@ -20,10 +20,10 @@ pointLogo.addEventListener('click', function() {
   }, false);
 });
 
-point4x4.addEventListener('click', drawSomeImgCanvas.bind(null, './data/4x4.json', 128, '#'));
-point32x32.addEventListener('click', drawSomeImgCanvas.bind(null, './data/32x32.json', 16, 'rgba'));
+point4x4.addEventListener('click', drawCanvasImg.bind(null, './data/4x4.json', 128, '#'));
+point32x32.addEventListener('click', drawCanvasImg.bind(null, './data/32x32.json', 16, 'rgba'));
 
-function drawSomeImgCanvas(routeData, scaleImg, colorModel) {
+function drawCanvasImg(routeData, scaleImg, colorModel) {
 
   let requestCanvas = new XMLHttpRequest();
 
@@ -33,11 +33,11 @@ function drawSomeImgCanvas(routeData, scaleImg, colorModel) {
 
   requestCanvas.onload = function() {
 
-    let arrayCanvas = requestCanvas.response;
+    let canvasAreaColor = requestCanvas.response;
     let canvas = document.querySelector('canvas'); 
     let contextCanvas = canvas.getContext('2d');
-    let width = arrayCanvas[0].length; 
-    let height = arrayCanvas.length;
+    let width = canvasAreaColor[0].length; 
+    let height = canvasAreaColor.length;
     let scale = scaleImg;  
     
     canvas.width = width * scale; 
@@ -46,9 +46,9 @@ function drawSomeImgCanvas(routeData, scaleImg, colorModel) {
     for(let row = 0; row < height; row++) {
       for(let col = 0; col < width; col++) {
         if ( colorModel == '#' ) {
-          contextCanvas.fillStyle = '#' + arrayCanvas[row][col];            
+          contextCanvas.fillStyle = '#' + canvasAreaColor[row][col];            
         } if (colorModel == 'rgba') {
-          contextCanvas.fillStyle = 'RGB(' + arrayCanvas[row][col] +')';           
+          contextCanvas.fillStyle = 'RGB(' + canvasAreaColor[row][col] +')';           
         } 
         contextCanvas.fillRect(col * scale, row * scale, scale, scale);
       }
