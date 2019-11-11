@@ -1,0 +1,134 @@
+
+.wrapper {
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 5px;
+}
+
+.nav {
+  width: 40px;
+  height: 40px;
+  background: url("./assets/svg/nav.svg") no-repeat center center;
+  cursor: pointer;
+}
+
+.menu {
+  width: 12px;
+  height: 24px;
+  background: url("./assets/svg/menu-icon.svg") no-repeat center center;
+  cursor: pointer;   
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  cursor: pointer; 
+}
+
+.top-first {
+  background: url("./assets/svg/top-first-icon-share.svg") no-repeat center center;
+}
+
+.top-second {
+  background: url("./assets/svg/top-second-icon-upload.svg") no-repeat center center;  
+}
+
+.top-third {
+  background: url("./assets/svg/top-third-icon-copy.svg") no-repeat center center;    
+}
+
+.top-fourth {
+  background: url("./assets/svg/top-fourth-list-item.svg") no-repeat center center;   
+}
+
+.button-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.buttons {
+  max-width: 400px; 
+}
+
+.button-list {
+  margin: 50px;
+  padding: 30px;
+  border: 1px solid black;
+  box-shadow: 0 0 5px;
+}
+
+.canvas-wrapper {
+  width: 512px;
+  height: 512px;
+  box-shadow: 0 0 5px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.point {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.bottom-first {
+  background: #C4C4C4;
+}
+
+.bottom-second {
+  background: #41F795;
+}
+
+.bottom-third {
+  background: #F74141;
+}
+
+.bottom-fourth {
+  background: #41B6F7;
+}
+
+.button-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.switcher {
+  max-width: 400px;
+  margin: 50px;
+  border: 1px solid black;
+  box-shadow: 0 0 5px;
+}
+
+.switch {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  margin-right: 20px;    
+}
+
+.img-switch {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 40px;
+  cursor: pointer;
+
+    &:hover {
+      background: rgb(177, 174, 174);   
+    }   
+}
